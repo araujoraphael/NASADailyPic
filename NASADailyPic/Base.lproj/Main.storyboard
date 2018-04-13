@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q8X-Kh-C7a">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="c9E-Fn-Ybg">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="Q8X-Kh-C7a" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MzO-vL-Sza">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="n7N-vZ-fm2" kind="relationship" relationship="rootViewController" id="HUs-jn-O1i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wyg-mO-Nb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474" y="127"/>
+        </scene>
+        <!--Daily Picture View Controller-->
+        <scene sceneID="493-7h-MBf">
+            <objects>
+                <viewController id="n7N-vZ-fm2" customClass="DailyPictureViewController" customModule="NASADailyPic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yPV-Hx-1bJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GIS-ui-Gpx">
+                                <rect key="frame" x="0.0" y="177" width="375" height="334"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="qUK-wb-tfQ"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="QeE-aC-Cwq">
+                                <rect key="frame" x="169" y="325" width="37" height="37"/>
+                                <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="6gh-7k-NBW">
+                                <rect key="frame" x="10" y="541" width="355" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZ2-9j-Vn9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W0U-3F-Pj4">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOS-ez-xZ7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="app-Qn-rAF">
+                                                <rect key="frame" x="323" y="30" width="44" height="44"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="aua-2J-K5S"/>
+                                                    <constraint firstAttribute="width" constant="44" id="kew-qm-IKI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                                                <state key="normal" title="X">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="closeButtonTappedWithSender:" destination="n7N-vZ-fm2" eventType="touchUpInside" id="B6v-oF-B91"/>
+                                                </connections>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epa-nY-uJS">
+                                                <rect key="frame" x="8" y="86" width="359" height="571"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="epa-nY-uJS" firstAttribute="top" secondItem="app-Qn-rAF" secondAttribute="bottom" constant="12" id="6vY-1g-IUn"/>
+                                            <constraint firstAttribute="trailing" secondItem="app-Qn-rAF" secondAttribute="trailing" constant="8" id="eEf-bZ-nsV"/>
+                                            <constraint firstItem="app-Qn-rAF" firstAttribute="top" secondItem="tOS-ez-xZ7" secondAttribute="top" constant="30" id="wKG-S1-wNk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="epa-nY-uJS" firstAttribute="leading" secondItem="YZ2-9j-Vn9" secondAttribute="leading" constant="8" id="1J1-x9-FQt"/>
+                                    <constraint firstAttribute="bottom" secondItem="W0U-3F-Pj4" secondAttribute="bottom" id="6if-Hu-AFT"/>
+                                    <constraint firstItem="tOS-ez-xZ7" firstAttribute="bottom" secondItem="W0U-3F-Pj4" secondAttribute="bottom" id="Fzf-dc-1D0"/>
+                                    <constraint firstItem="W0U-3F-Pj4" firstAttribute="leading" secondItem="YZ2-9j-Vn9" secondAttribute="leading" id="UkE-Cz-CGj"/>
+                                    <constraint firstItem="tOS-ez-xZ7" firstAttribute="trailing" secondItem="W0U-3F-Pj4" secondAttribute="trailing" id="afr-ET-Aaw"/>
+                                    <constraint firstAttribute="trailing" secondItem="W0U-3F-Pj4" secondAttribute="trailing" id="bDS-SY-2kI"/>
+                                    <constraint firstAttribute="bottom" secondItem="epa-nY-uJS" secondAttribute="bottom" constant="10" id="eM7-Zj-b67"/>
+                                    <constraint firstItem="tOS-ez-xZ7" firstAttribute="top" secondItem="W0U-3F-Pj4" secondAttribute="top" id="grD-7Z-ywE"/>
+                                    <constraint firstAttribute="trailing" secondItem="epa-nY-uJS" secondAttribute="trailing" constant="8" id="iaL-xw-zgK"/>
+                                    <constraint firstItem="tOS-ez-xZ7" firstAttribute="leading" secondItem="W0U-3F-Pj4" secondAttribute="leading" id="lTl-hm-YJh"/>
+                                    <constraint firstItem="W0U-3F-Pj4" firstAttribute="top" secondItem="YZ2-9j-Vn9" secondAttribute="top" id="tXl-XM-bFq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GIS-ui-Gpx" firstAttribute="trailing" secondItem="Cng-rO-UzX" secondAttribute="trailing" id="0bp-jV-Z7s"/>
+                            <constraint firstItem="GIS-ui-Gpx" firstAttribute="centerY" secondItem="Cng-rO-UzX" secondAttribute="centerY" id="4lz-xg-HAZ"/>
+                            <constraint firstItem="GIS-ui-Gpx" firstAttribute="leading" secondItem="Cng-rO-UzX" secondAttribute="leading" id="6Cf-XZ-b5A"/>
+                            <constraint firstItem="6gh-7k-NBW" firstAttribute="top" secondItem="GIS-ui-Gpx" secondAttribute="bottom" constant="30.5" id="P5N-Cc-Ox7"/>
+                            <constraint firstItem="YZ2-9j-Vn9" firstAttribute="bottom" secondItem="Cng-rO-UzX" secondAttribute="bottom" id="PRB-Oa-Xgj"/>
+                            <constraint firstItem="QeE-aC-Cwq" firstAttribute="centerX" secondItem="GIS-ui-Gpx" secondAttribute="centerX" id="SjT-v2-0dG"/>
+                            <constraint firstItem="6gh-7k-NBW" firstAttribute="leading" secondItem="Cng-rO-UzX" secondAttribute="leading" constant="10" id="Yfy-cT-25t"/>
+                            <constraint firstItem="Cng-rO-UzX" firstAttribute="trailing" secondItem="6gh-7k-NBW" secondAttribute="trailing" constant="10" id="cRt-7j-b7I"/>
+                            <constraint firstItem="GIS-ui-Gpx" firstAttribute="height" secondItem="yPV-Hx-1bJ" secondAttribute="height" multiplier="0.5" id="fbn-PJ-QSz"/>
+                            <constraint firstItem="YZ2-9j-Vn9" firstAttribute="top" secondItem="yPV-Hx-1bJ" secondAttribute="top" id="g7m-aT-P1d"/>
+                            <constraint firstItem="YZ2-9j-Vn9" firstAttribute="trailing" secondItem="GIS-ui-Gpx" secondAttribute="trailing" id="lTZ-4S-Rox"/>
+                            <constraint firstItem="QeE-aC-Cwq" firstAttribute="centerY" secondItem="GIS-ui-Gpx" secondAttribute="centerY" id="sqz-M0-NLA"/>
+                            <constraint firstItem="YZ2-9j-Vn9" firstAttribute="leading" secondItem="GIS-ui-Gpx" secondAttribute="leading" id="tJu-Y9-fot"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cng-rO-UzX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nN7-6p-oNe"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="QeE-aC-Cwq" id="7eM-xh-hcm"/>
+                        <outlet property="explanationTextView" destination="epa-nY-uJS" id="NqM-h0-4nt"/>
+                        <outlet property="fullScreenDetails" destination="tOS-ez-xZ7" id="Kgp-uP-5MZ"/>
+                        <outlet property="fullScreenImageView" destination="W0U-3F-Pj4" id="65R-cT-e4U"/>
+                        <outlet property="fullScreenView" destination="YZ2-9j-Vn9" id="lJh-Uh-lf9"/>
+                        <outlet property="imageView" destination="GIS-ui-Gpx" id="lgM-2U-SBG"/>
+                        <outlet property="titleLabel" destination="6gh-7k-NBW" id="hCy-zw-gdT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="if9-5N-WhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528.79999999999995" y="125.4872563718141"/>
+        </scene>
+    </scenes>
+</document>
