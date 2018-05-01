@@ -10,45 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NASADailyPic/Client/APIClient.swift"
-            timestampString = "545344952.4359649"
+            timestampString = "545929861.111927"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
             landmarkName = "fetchDailyPicture(onCompletion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data&gt;) -&gt; () in NASADailyPic.APIClient.fetchDailyPicture(onCompletion: (Swift.Bool, Swift.Optional&lt;NASADailyPic.Picture&gt;, Swift.Optional&lt;NASADailyPic.CustomError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "NASADailyPic"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/araujoraphael/workspace/projects/ScotiaBank/NASADailyPic/NASADailyPic/Client/APIClient.swift"
-                  timestampString = "545344952.460403"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "2083">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data&gt;) -&gt; () in NASADailyPicTests.APIClient.fetchDailyPicture(onCompletion: (Swift.Bool, Swift.Optional&lt;NASADailyPicTests.Picture&gt;, Swift.Optional&lt;NASADailyPicTests.CustomError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "NASADailyPicTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/araujoraphael/workspace/projects/ScotiaBank/NASADailyPic/NASADailyPic/Client/APIClient.swift"
-                  timestampString = "545344953.96068"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "2083">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,45 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NASADailyPic/View/DailyPictureViewModel.swift"
-            timestampString = "545344603.390178"
+            timestampString = "545929983.714099"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
             endingLineNumber = "46"
             landmarkName = "fetchPicture()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;NASADailyPic.Picture&gt;, Swift.Optional&lt;NASADailyPic.CustomError&gt;) -&gt; () in NASADailyPic.DailyPictureViewModel.fetchPicture() -&gt; ()"
-                  moduleName = "NASADailyPic"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/araujoraphael/workspace/projects/ScotiaBank/NASADailyPic/NASADailyPic/View/DailyPictureViewModel.swift"
-                  timestampString = "545344952.514643"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "1754">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;NASADailyPicTests.Picture&gt;, Swift.Optional&lt;NASADailyPicTests.CustomError&gt;) -&gt; () in NASADailyPicTests.DailyPictureViewModel.fetchPicture() -&gt; ()"
-                  moduleName = "NASADailyPicTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/araujoraphael/workspace/projects/ScotiaBank/NASADailyPic/NASADailyPic/View/DailyPictureViewModel.swift"
-                  timestampString = "545344953.967922"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "1754">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

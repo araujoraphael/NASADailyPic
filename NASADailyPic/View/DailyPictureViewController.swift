@@ -32,23 +32,23 @@ class DailyPictureViewController: UIViewController {
     
     //MARK: ViewModel Configuration
     func configureViewModel() {
-        self.dailyPictureViewModel.updateLoading = { () in
+        self.dailyPictureViewModel.updateLoading = { [weak self] () in
             performOnMainQueue {
-                if self.dailyPictureViewModel.loading {
-                    self.activityIndicator.startAnimating()
+                if (self?.dailyPictureViewModel.loading)! {
+                    self?.activityIndicator.startAnimating()
                 } else {
-                    self.activityIndicator.stopAnimating()
+                    self?.activityIndicator.stopAnimating()
                 }
             }
         }
         
-        self.dailyPictureViewModel.updatePicture = { () in
-            self.loadImage()
-            self.loadTitle()
+        self.dailyPictureViewModel.updatePicture = { [weak self] () in
+            self?.loadImage()
+            self?.loadTitle()
         }
         
-        self.dailyPictureViewModel.displayError = { (errrorMessage) in
-            self.showAlert(message: errrorMessage)
+        self.dailyPictureViewModel.displayError = { [weak self] (errrorMessage) in
+            self?.showAlert(message: errrorMessage)
         }
         
         dailyPictureViewModel.fetchPicture()

@@ -35,16 +35,16 @@ class DailyPictureViewModel {
     func fetchPicture() {
         self.loading = true
         
-        apiClient.fetchDailyPicture { completed, picture, error in
-            self.loading = false
+        apiClient.fetchDailyPicture { [weak self] completed, picture, error in
+            self?.loading = false
             
             if completed {
                 if let image = picture {
-                    self.pictureViewModel = self.canonicalFrom(picture: image)
+                    self?.pictureViewModel = self?.canonicalFrom(picture: image)
                 }
             } else {
                 if let errorDescription = error?.localizedDescription {
-                    self.displayError?(errorDescription)
+                    self?.displayError?(errorDescription)
                 }
             }
         }
