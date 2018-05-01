@@ -1,3 +1,3 @@
 # NASADailyPic
 
-![](https://www.dropbox.com/s/jcie6ynh9u6hhwa/NASADailyPic.gif)!
+![Example](https://www.dropbox.com/s/jcie6ynh9u6hhwa/NASADailyPic.gif)
