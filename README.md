@@ -1,3 +1,3 @@
 # NASADailyPic
 
-![](NASADailyPic_.gif)
+<p aling="center">![Example](NASADailyPic_.gif) </p>
