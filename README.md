@@ -1,4 +1,4 @@
 # NASADailyPic
 <p aling="center">
-  ![Example](NASADailyPic_.gif)
+  <img src="NASADailyPic_.gif"/>
 </p>
