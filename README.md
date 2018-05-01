@@ -1,3 +1,0 @@
-# NASADailyPic
-
-![Example](NASADailyPic.gif)
