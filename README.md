@@ -1,4 +1,4 @@
 # NASADailyPic
-<p aling="center">
+<p align="center">
   <img src="NASADailyPic_.gif"/>
 </p>
